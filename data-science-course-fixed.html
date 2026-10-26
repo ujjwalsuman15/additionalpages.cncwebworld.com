@@ -1,0 +1,2457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Data Science Course in Navi Mumbai | CNC WEB WORLD</title>
+
+    <meta name="description"
+        content="Learn Data Science with practical offline classroom training at CNC WEB WORLD. Master Python, Statistics, NumPy, Pandas, SQL, Data Visualization, Machine Learning and real-world projects.">
+
+    <meta name="keywords"
+        content="Data Science Course in Navi Mumbai, Data Science Training in Navi Mumbai, Data Science Classes, Data Science Course Nerul, Data Science Course Kharghar, Data Science Institute Navi Mumbai, Machine Learning Course">
+
+    <link rel="canonical" href="https://cncwebworld.com/mumbai/data-science-course.php">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #202124;
+            background: #ffffff;
+            line-height: 1.7;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .top-bar {
+            background: #101828;
+            color: #fff;
+            padding: 9px 0;
+            font-size: 14px;
+        }
+
+        .top-bar a {
+            color: #fff;
+            margin-left: 20px;
+        }
+
+        .navbar {
+            background: #fff;
+            padding: 16px 0;
+            box-shadow: 0 3px 18px rgba(0, 0, 0, 0.06);
+        }
+
+        .navbar-brand {
+            font-size: 25px;
+            font-weight: 800;
+            color: #ff5a1f !important;
+        }
+
+        .navbar-brand span {
+            color: #101828;
+        }
+
+        .nav-link {
+            color: #202124 !important;
+            font-weight: 600;
+            margin: 0 7px;
+        }
+
+        .nav-link:hover {
+            color: #ff5a1f !important;
+        }
+
+        .btn-main {
+            background: #ff5a1f;
+            color: #fff;
+            padding: 13px 25px;
+            border-radius: 7px;
+            font-weight: 700;
+            border: none;
+            transition: 0.3s;
+        }
+
+        .btn-main:hover {
+            background: #e94d14;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        /* HERO */
+
+        .hero {
+            background:
+                linear-gradient(120deg, rgba(9, 30, 66, .97), rgba(13, 45, 85, .92)),
+                url("images/data-science-banner.jpg"), linear-gradient(120deg, #091e42, #0d2d55);
+
+            background-size: cover;
+            background-position: center;
+
+            padding: 90px 0;
+            color: #fff;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, .12);
+            border: 1px solid rgba(255, 255, 255, .25);
+            padding: 8px 16px;
+            border-radius: 50px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #ff6b2c;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #e5e7eb;
+            max-width: 700px;
+            margin-bottom: 30px;
+        }
+
+        .hero-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        .hero-list span {
+            background: rgba(255, 255, 255, .1);
+            border: 1px solid rgba(255, 255, 255, .18);
+            padding: 9px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .hero-card {
+            background: #fff;
+            color: #202124;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, .25);
+        }
+
+        .hero-card h3 {
+            font-size: 23px;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .hero-card p {
+            color: #667085;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .hero-card input,
+        .hero-card select,
+        .hero-card textarea {
+            width: 100%;
+            border: 1px solid #d0d5dd;
+            padding: 12px 14px;
+            border-radius: 7px;
+            margin-bottom: 12px;
+            outline: none;
+        }
+
+        .hero-card textarea {
+            height: 80px;
+            resize: none;
+        }
+
+
+        .hero-card input:focus,
+        .hero-card select:focus,
+        .hero-card textarea:focus {
+            border-color: #ff5a1f;
+            box-shadow: 0 0 0 3px rgba(255, 90, 31, .12);
+        }
+
+        .form-status {
+            display: none;
+            padding: 10px 12px;
+            border-radius: 7px;
+            margin: 2px 0 12px;
+            font-size: 13px;
+            line-height: 1.45;
+        }
+
+        .form-status.show {
+            display: block;
+        }
+
+        .form-status.error {
+            background: #fff1f0;
+            color: #b42318;
+            border: 1px solid #fecdca;
+        }
+
+        .form-status.success {
+            background: #ecfdf3;
+            color: #027a48;
+            border: 1px solid #abefc6;
+        }
+
+        .hero-card .field-error {
+            border-color: #d92d20 !important;
+        }
+
+        .hero-list i,
+        .hero-card .bi {
+            margin-right: 4px;
+        }
+
+        /* COMMON */
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title span {
+            color: #ff5a1f;
+            font-weight: 700;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .section-title h2 {
+            font-size: 38px;
+            font-weight: 800;
+            margin-top: 8px;
+        }
+
+        .section-title p {
+            max-width: 700px;
+            margin: 15px auto 0;
+            color: #667085;
+        }
+
+        /* STATS */
+
+        .stats {
+            background: #f8fafc;
+            padding: 35px 0;
+        }
+
+        .stat-box {
+            text-align: center;
+            padding: 15px;
+        }
+
+        .stat-box i {
+            color: #ff5a1f;
+            font-size: 30px;
+        }
+
+        .stat-box h3 {
+            font-size: 27px;
+            font-weight: 800;
+            margin: 8px 0 0;
+        }
+
+        .stat-box p {
+            margin: 0;
+            color: #667085;
+            font-size: 14px;
+        }
+
+        /* WHY */
+
+        .feature-card {
+            padding: 28px;
+            background: #fff;
+            border: 1px solid #eaecf0;
+            border-radius: 12px;
+            height: 100%;
+            transition: .3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+        }
+
+        .feature-icon {
+            width: 55px;
+            height: 55px;
+            background: #fff1eb;
+            color: #ff5a1f;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            margin-bottom: 18px;
+        }
+
+        .feature-card h4 {
+            font-weight: 750;
+            font-size: 19px;
+        }
+
+        .feature-card p {
+            color: #667085;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* CURRICULUM */
+
+        .curriculum-section {
+            background: #f8fafc;
+        }
+
+        .module {
+            background: #fff;
+            border: 1px solid #eaecf0;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+
+        .module-header {
+            padding: 20px 23px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+
+        .module-header h4 {
+            font-size: 18px;
+            font-weight: 750;
+            margin: 0;
+        }
+
+        .module-number {
+            background: #ff5a1f;
+            color: #fff;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 12px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .module-body {
+            padding: 0 25px 23px 74px;
+        }
+
+        .module-body ul {
+            margin: 0;
+            padding-left: 18px;
+        }
+
+        .module-body li {
+            margin: 5px 0;
+            color: #667085;
+            font-size: 14px;
+        }
+
+        /* CURRICULUM DROPDOWN */
+        .module-body {
+            display: none;
+        }
+
+        .module.is-open .module-body {
+            display: block;
+        }
+
+        .module-header {
+            user-select: none;
+            transition: background .2s ease;
+        }
+
+        .module-header:hover {
+            background: #fffaf7;
+        }
+
+        .module-header>i {
+            transition: transform .25s ease;
+            flex-shrink: 0;
+        }
+
+        .module.is-open .module-header>i {
+            transform: rotate(180deg);
+        }
+
+        /* TECHNOLOGIES */
+
+        .tech-box {
+            background: #101828;
+            color: #fff;
+            border-radius: 16px;
+            padding: 45px;
+        }
+
+        .tech-item {
+            background: rgba(255, 255, 255, .07);
+            border: 1px solid rgba(255, 255, 255, .1);
+            padding: 18px;
+            border-radius: 10px;
+            text-align: center;
+            height: 100%;
+        }
+
+        .tech-item i {
+            font-size: 28px;
+            color: #ff6b2c;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .tech-item h5 {
+            font-weight: 700;
+            margin: 0;
+        }
+
+        /* CAREER */
+
+        .career-card {
+            padding: 25px;
+            background: #fff;
+            border: 1px solid #eaecf0;
+            border-radius: 10px;
+            text-align: center;
+            height: 100%;
+        }
+
+        .career-card i {
+            font-size: 32px;
+            color: #ff5a1f;
+            margin-bottom: 15px;
+        }
+
+        .career-card h5 {
+            font-weight: 700;
+            margin: 0;
+        }
+
+        /* PROJECT */
+
+        .project-section {
+            background: #fff7f2;
+        }
+
+        .project-box {
+            background: #fff;
+            padding: 28px;
+            border-radius: 12px;
+            border: 1px solid #f5d8c8;
+            height: 100%;
+        }
+
+        .project-box h4 {
+            font-weight: 750;
+        }
+
+        .project-box ul {
+            padding-left: 20px;
+            color: #667085;
+        }
+
+        /* WHO */
+
+        .who-box {
+            padding: 30px;
+            background: #f8fafc;
+            border-radius: 12px;
+            height: 100%;
+        }
+
+        .who-box i {
+            font-size: 32px;
+            color: #ff5a1f;
+        }
+
+        .who-box h4 {
+            margin-top: 15px;
+            font-weight: 750;
+        }
+
+        /* CTA */
+
+        .cta {
+            background:
+                linear-gradient(120deg, #ff5a1f, #e8490d);
+            color: #fff;
+            padding: 65px 0;
+        }
+
+        .cta h2 {
+            font-size: 38px;
+            font-weight: 800;
+        }
+
+        .cta p {
+            color: #ffe7dc;
+        }
+
+        .btn-light-custom {
+            background: #fff;
+            color: #e94d14;
+            padding: 13px 28px;
+            border-radius: 7px;
+            font-weight: 750;
+            display: inline-block;
+        }
+
+        /* FAQ */
+
+        .accordion-button {
+            font-weight: 650;
+            padding: 20px;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background: #fff5f0;
+            color: #e94d14;
+            box-shadow: none;
+        }
+
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #101828;
+            color: #d0d5dd;
+            padding: 55px 0 20px;
+        }
+
+        footer h4 {
+            color: #fff;
+            font-weight: 750;
+            margin-bottom: 18px;
+        }
+
+        footer p,
+        footer li {
+            font-size: 14px;
+            color: #98a2b3;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer li {
+            margin-bottom: 8px;
+        }
+
+        footer a {
+            color: #98a2b3;
+        }
+
+        footer a:hover {
+            color: #ff6b2c;
+        }
+
+        .copyright {
+            border-top: 1px solid #344054;
+            margin-top: 35px;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #98a2b3;
+        }
+
+        /* MOBILE */
+
+        @media(max-width: 991px) {
+
+            .hero {
+                padding: 65px 0;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero-card {
+                margin-top: 35px;
+            }
+
+        }
+
+        @media(max-width: 576px) {
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .section {
+                padding: 55px 0;
+            }
+
+            .section-title h2 {
+                font-size: 30px;
+            }
+
+            .module-body {
+                padding-left: 25px;
+            }
+
+            .tech-box {
+                padding: 25px;
+            }
+
+            .cta h2 {
+                font-size: 29px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="d-flex justify-content-between flex-wrap">
+
+                <div>
+                    <a href="tel:+917400193799" aria-label="Call CNC WEB WORLD"><i class="bi bi-telephone-fill"></i> +91
+                        7400193799</a>
+                </div>
+
+                <div>
+                    <a href="mailto:nerul@cncwebworld.com" aria-label="Email CNC WEB WORLD">
+                        <i class="bi bi-envelope"></i>
+                        nerul@cncwebworld.com
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="https://cncwebworld.com/">
+                <img src="https://cncwebworld.com/mumbai/assets/img/logo.png" alt="logo_image" srcset="" class="img-fluid"
+                    style="width: 130px; height: 50px;">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://cncwebworld.com/">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#curriculum">
+                            Courses
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#enquiry">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a href="#enquiry" class="btn-main">
+                            Enquire Now
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-7">
+
+                    <div class="hero-badge">
+                        <i class="bi bi-bar-chart-fill"></i>
+                        Industry-Oriented Offline Training
+                    </div>
+
+                    <h1>
+                        Data Science Course
+                        <span>in Navi Mumbai</span>
+                    </h1>
+
+                    <p>
+                        Build a career in Data Science with practical,
+                        project-based classroom training. Learn Python,
+                        Statistics, Data Analysis, Machine Learning,
+                        SQL and Data Visualization from fundamentals
+                        to advanced concepts.
+                    </p>
+
+                    <div class="hero-list">
+
+                        <span>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Offline Classroom Training
+                        </span>
+
+                        <span>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Live Projects
+                        </span>
+
+                        <span>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Certification
+                        </span>
+
+                        <span>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Placement Assistance
+                        </span>
+
+                    </div>
+
+                    <a href="#enquiry" class="btn-main">
+                        Book Free Demo
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="col-lg-5" id="enquiry">
+
+                    <div class="hero-card">
+
+                        <h3>Start Your Data Science Journey</h3>
+
+                        <p>
+                            Fill the form and our counsellor will contact you.
+                        </p>
+
+                        <form id="enquiryForm" novalidate>
+
+                            <input type="text" id="name" name="name" placeholder="Your Name" autocomplete="name"
+                                minlength="2" required>
+
+                            <input type="tel" id="phone" name="phone" placeholder="Mobile Number" autocomplete="tel"
+                                inputmode="numeric" pattern="[0-9]{10}" maxlength="10" required>
+
+                            <input type="email" id="email" name="email" placeholder="Email Address"
+                                autocomplete="email">
+
+                            <select id="qualification" name="qualification" required>
+
+                                <option value="">
+                                    Select Your Qualification
+                                </option>
+
+                                <option>12th / HSC</option>
+                                <option>Graduate</option>
+                                <option>Post Graduate</option>
+                                <option>Working Professional</option>
+
+                            </select>
+
+                            <textarea id="message" name="message" placeholder="Your Message" maxlength="500"></textarea>
+
+                            <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+
+                            <button type="submit" class="btn-main w-100" id="submitBtn">
+
+                                Enquire Now
+
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- STATS -->
+
+    <section class="stats">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-6 col-lg-3">
+                    <div class="stat-box">
+                        <i class="bi bi-kanban"></i>
+                        <h3>15+</h3>
+                        <p>Projects & Case Studies</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <div class="stat-box">
+                        <i class="bi bi-clock-history"></i>
+                        <h3>100+</h3>
+                        <p>Hours Practical Training</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <div class="stat-box">
+                        <i class="bi bi-person-workspace"></i>
+                        <h3>1:1</h3>
+                        <p>Mentor Support</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <div class="stat-box">
+                        <i class="bi bi-award"></i>
+                        <h3>Yes</h3>
+                        <p>Course Certification</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INTRODUCTION -->
+
+    <section class="section" id="about">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Learn Data Science</span>
+
+                <h2>
+                    Become Industry-Ready with Data Science
+                </h2>
+
+                <p>
+                    Learn how to convert raw data into meaningful insights
+                    and build predictive solutions using modern Data Science
+                    tools and techniques.
+                </p>
+
+            </div>
+
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+
+                    <h3 class="fw-bold mb-3">
+                        What is Data Science?
+                    </h3>
+
+                    <p>
+                        Data Science combines programming, statistics,
+                        mathematics and domain knowledge to extract useful
+                        insights from data and support data-driven decisions.
+                    </p>
+
+                    <p>
+                        Our Data Science course is designed to take learners
+                        from programming and data handling fundamentals to
+                        exploratory data analysis, machine learning and
+                        real-world project implementation.
+                    </p>
+
+                    <p>
+                        The focus is not only on theory. You will work with
+                        datasets, solve practical problems, build models and
+                        learn how to present your findings.
+                    </p>
+
+                    <a href="#curriculum" class="btn-main">
+                        View Curriculum
+                    </a>
+
+                </div>
+
+
+                <div class="col-lg-6 mt-4 mt-lg-0">
+
+                    <div class="row g-3">
+
+                        <div class="col-6">
+                            <div class="feature-card">
+
+                                <div class="feature-icon">
+                                    <i class="bi bi-code-slash"></i>
+                                </div>
+
+                                <h4>Python</h4>
+
+                                <p>
+                                    Learn Python programming for data
+                                    analysis and machine learning.
+                                </p>
+
+                            </div>
+                        </div>
+
+
+                        <div class="col-6">
+                            <div class="feature-card">
+
+                                <div class="feature-icon">
+                                    <i class="bi bi-database"></i>
+                                </div>
+
+                                <h4>SQL</h4>
+
+                                <p>
+                                    Extract, filter and analyze data
+                                    from relational databases.
+                                </p>
+
+                            </div>
+                        </div>
+
+
+                        <div class="col-6">
+                            <div class="feature-card">
+
+                                <div class="feature-icon">
+                                    <i class="bi bi-graph-up-arrow"></i>
+                                </div>
+
+                                <h4>Analytics</h4>
+
+                                <p>
+                                    Explore datasets and discover useful
+                                    patterns and insights.
+                                </p>
+
+                            </div>
+                        </div>
+
+
+                        <div class="col-6">
+                            <div class="feature-card">
+
+                                <div class="feature-icon">
+                                    <i class="bi bi-cpu"></i>
+                                </div>
+
+                                <h4>Machine Learning</h4>
+
+                                <p>
+                                    Build and evaluate predictive
+                                    machine learning models.
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- WHY CNC -->
+
+    <section class="section curriculum-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Why Choose Us</span>
+
+                <h2>
+                    Why Learn Data Science at CNC WEB WORLD?
+                </h2>
+
+                <p>
+                    Learn through a practical and structured training
+                    approach designed around real-world applications.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="bi bi-laptop"></i>
+                        </div>
+
+                        <h4>100% Practical Learning</h4>
+
+                        <p>
+                            Practice concepts through coding exercises,
+                            datasets, assignments and projects.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="bi bi-person-check"></i>
+                        </div>
+
+                        <h4>Experienced Mentors</h4>
+
+                        <p>
+                            Get guidance from trainers with practical
+                            knowledge of programming and data technologies.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="bi bi-kanban"></i>
+                        </div>
+
+                        <h4>Real-World Projects</h4>
+
+                        <p>
+                            Work on projects and case studies based on
+                            realistic business datasets.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="bi bi-file-earmark-person"></i>
+                        </div>
+
+                        <h4>Resume Building</h4>
+
+                        <p>
+                            Build a professional resume around your
+                            technical skills and projects.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="bi bi-mic"></i>
+                        </div>
+
+                        <h4>Interview Preparation</h4>
+
+                        <p>
+                            Prepare with technical questions, mock
+                            interviews and HR interview sessions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="bi bi-briefcase"></i>
+                        </div>
+
+                        <h4>Placement Assistance</h4>
+
+                        <p>
+                            Receive career guidance and placement
+                            assistance after completing the course.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CURRICULUM -->
+
+    <section class="section" id="curriculum">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Course Curriculum</span>
+
+                <h2>
+                    Data Science Training Curriculum
+                </h2>
+
+                <p>
+                    A structured learning path covering programming,
+                    analytics, statistics and machine learning.
+                </p>
+
+            </div>
+
+
+            <!-- MODULE 1 -->
+
+            <div class="module">
+
+                <div class="module-header" role="button" tabindex="0" aria-expanded="false">
+
+                    <div>
+
+                        <span class="module-number">01</span>
+
+                        <h4 class="d-inline">
+                            Python Programming
+                        </h4>
+
+                    </div>
+
+                    <i class="bi bi-chevron-down"></i>
+
+                </div>
+
+                <div class="module-body">
+
+                    <ul>
+
+                        <li>Python fundamentals</li>
+                        <li>Variables and data types</li>
+                        <li>Operators and expressions</li>
+                        <li>Conditional statements</li>
+                        <li>Loops</li>
+                        <li>Functions</li>
+                        <li>Lists, tuples, sets and dictionaries</li>
+                        <li>File handling</li>
+                        <li>Exception handling</li>
+                        <li>Object-Oriented Programming</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- MODULE 2 -->
+
+            <div class="module">
+
+                <div class="module-header" role="button" tabindex="0" aria-expanded="false">
+
+                    <div>
+
+                        <span class="module-number">02</span>
+
+                        <h4 class="d-inline">
+                            NumPy & Pandas
+                        </h4>
+
+                    </div>
+
+                    <i class="bi bi-chevron-down"></i>
+
+                </div>
+
+                <div class="module-body">
+
+                    <ul>
+
+                        <li>NumPy arrays</li>
+                        <li>Array operations</li>
+                        <li>Indexing and slicing</li>
+                        <li>Pandas Series and DataFrames</li>
+                        <li>Reading CSV and Excel data</li>
+                        <li>Data filtering and sorting</li>
+                        <li>Missing value handling</li>
+                        <li>Data cleaning</li>
+                        <li>Grouping and aggregation</li>
+                        <li>Data transformation</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- MODULE 3 -->
+
+            <div class="module">
+
+                <div class="module-header" role="button" tabindex="0" aria-expanded="false">
+
+                    <div>
+
+                        <span class="module-number">03</span>
+
+                        <h4 class="d-inline">
+                            Statistics for Data Science
+                        </h4>
+
+                    </div>
+
+                    <i class="bi bi-chevron-down"></i>
+
+                </div>
+
+                <div class="module-body">
+
+                    <ul>
+
+                        <li>Descriptive statistics</li>
+                        <li>Mean, median and mode</li>
+                        <li>Variance and standard deviation</li>
+                        <li>Probability fundamentals</li>
+                        <li>Distributions</li>
+                        <li>Correlation</li>
+                        <li>Regression basics</li>
+                        <li>Hypothesis testing</li>
+                        <li>Confidence intervals</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- MODULE 4 -->
+
+            <div class="module">
+
+                <div class="module-header" role="button" tabindex="0" aria-expanded="false">
+
+                    <div>
+
+                        <span class="module-number">04</span>
+
+                        <h4 class="d-inline">
+                            Data Visualization & EDA
+                        </h4>
+
+                    </div>
+
+                    <i class="bi bi-chevron-down"></i>
+
+                </div>
+
+                <div class="module-body">
+
+                    <ul>
+
+                        <li>Exploratory Data Analysis</li>
+                        <li>Matplotlib</li>
+                        <li>Seaborn</li>
+                        <li>Line charts</li>
+                        <li>Bar charts</li>
+                        <li>Scatter plots</li>
+                        <li>Histograms</li>
+                        <li>Box plots</li>
+                        <li>Heatmaps</li>
+                        <li>Correlation analysis</li>
+                        <li>Outlier detection</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- MODULE 5 -->
+
+            <div class="module">
+
+                <div class="module-header" role="button" tabindex="0" aria-expanded="false">
+
+                    <div>
+
+                        <span class="module-number">05</span>
+
+                        <h4 class="d-inline">
+                            SQL & Database
+                        </h4>
+
+                    </div>
+
+                    <i class="bi bi-chevron-down"></i>
+
+                </div>
+
+                <div class="module-body">
+
+                    <ul>
+
+                        <li>Database fundamentals</li>
+                        <li>SQL syntax</li>
+                        <li>SELECT queries</li>
+                        <li>Filtering and sorting</li>
+                        <li>Aggregate functions</li>
+                        <li>GROUP BY and HAVING</li>
+                        <li>Joins</li>
+                        <li>Subqueries</li>
+                        <li>Views</li>
+                        <li>Stored procedures</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- MODULE 6 -->
+
+            <div class="module">
+
+                <div class="module-header" role="button" tabindex="0" aria-expanded="false">
+
+                    <div>
+
+                        <span class="module-number">06</span>
+
+                        <h4 class="d-inline">
+                            Machine Learning
+                        </h4>
+
+                    </div>
+
+                    <i class="bi bi-chevron-down"></i>
+
+                </div>
+
+                <div class="module-body">
+
+                    <ul>
+
+                        <li>Introduction to Machine Learning</li>
+                        <li>Supervised Learning</li>
+                        <li>Unsupervised Learning</li>
+                        <li>Training and testing datasets</li>
+                        <li>Linear Regression</li>
+                        <li>Logistic Regression</li>
+                        <li>Decision Trees</li>
+                        <li>Random Forest</li>
+                        <li>K-Nearest Neighbors</li>
+                        <li>K-Means Clustering</li>
+                        <li>Model evaluation</li>
+                        <li>Feature engineering</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- MODULE 7 -->
+
+            <div class="module">
+
+                <div class="module-header" role="button" tabindex="0" aria-expanded="false">
+
+                    <div>
+
+                        <span class="module-number">07</span>
+
+                        <h4 class="d-inline">
+                            Advanced Machine Learning
+                        </h4>
+
+                    </div>
+
+                    <i class="bi bi-chevron-down"></i>
+
+                </div>
+
+                <div class="module-body">
+
+                    <ul>
+
+                        <li>Feature selection</li>
+                        <li>Hyperparameter tuning</li>
+                        <li>Cross-validation</li>
+                        <li>Model optimization</li>
+                        <li>Ensemble techniques</li>
+                        <li>Model comparison</li>
+                        <li>Pipeline creation</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- MODULE 8 -->
+
+            <div class="module">
+
+                <div class="module-header" role="button" tabindex="0" aria-expanded="false">
+
+                    <div>
+
+                        <span class="module-number">08</span>
+
+                        <h4 class="d-inline">
+                            Real-World Projects
+                        </h4>
+
+                    </div>
+
+                    <i class="bi bi-chevron-down"></i>
+
+                </div>
+
+                <div class="module-body">
+
+                    <ul>
+
+                        <li>Data cleaning project</li>
+                        <li>Exploratory data analysis project</li>
+                        <li>Business analytics case study</li>
+                        <li>Machine learning prediction project</li>
+                        <li>Customer segmentation project</li>
+                        <li>End-to-end capstone project</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TECHNOLOGIES -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="tech-box">
+
+                <div class="text-center mb-5">
+
+                    <span class="text-uppercase fw-bold" style="color:#ff6b2c;">
+                        Tools & Technologies
+                    </span>
+
+                    <h2 class="fw-bold mt-2">
+                        Technologies You'll Learn
+                    </h2>
+
+                    <p class="text-secondary">
+                        Work with popular tools used across modern
+                        data analysis and machine learning workflows.
+                    </p>
+
+                </div>
+
+
+                <div class="row g-3">
+
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="tech-item">
+                            <i class="bi bi-code-slash"></i>
+                            <h5>Python</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="tech-item">
+                            <i class="bi bi-grid-3x3-gap"></i>
+                            <h5>NumPy</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="tech-item">
+                            <i class="bi bi-table"></i>
+                            <h5>Pandas</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="tech-item">
+                            <i class="bi bi-bar-chart"></i>
+                            <h5>Matplotlib</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="tech-item">
+                            <i class="bi bi-graph-up"></i>
+                            <h5>Seaborn</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="tech-item">
+                            <i class="bi bi-database"></i>
+                            <h5>SQL</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="tech-item">
+                            <i class="bi bi-cpu"></i>
+                            <h5>Scikit-Learn</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="tech-item">
+                            <i class="bi bi-journal-code"></i>
+                            <h5>Jupyter</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+
+    <section class="section project-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Hands-On Experience</span>
+
+                <h2>
+                    Build Real Data Science Projects
+                </h2>
+
+                <p>
+                    Apply what you learn through practical datasets,
+                    business cases and end-to-end projects.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="project-box">
+
+                        <h4>
+                            <i class="bi bi-graph-up-arrow text-danger"></i>
+                            Sales Prediction
+                        </h4>
+
+                        <p>
+                            Analyze historical sales data and build
+                            a model to predict future sales.
+                        </p>
+
+                        <ul>
+                            <li>Data cleaning</li>
+                            <li>EDA</li>
+                            <li>Feature engineering</li>
+                            <li>Regression model</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="project-box">
+
+                        <h4>
+                            <i class="bi bi-people text-danger"></i>
+                            Customer Segmentation
+                        </h4>
+
+                        <p>
+                            Segment customers based on their behavior
+                            and purchasing patterns.
+                        </p>
+
+                        <ul>
+                            <li>Data analysis</li>
+                            <li>Feature selection</li>
+                            <li>K-Means clustering</li>
+                            <li>Business insights</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="project-box">
+
+                        <h4>
+                            <i class="bi bi-house-door text-danger"></i>
+                            Price Prediction
+                        </h4>
+
+                        <p>
+                            Build a machine learning model to estimate
+                            prices using historical property data.
+                        </p>
+
+                        <ul>
+                            <li>Data preprocessing</li>
+                            <li>Regression</li>
+                            <li>Model evaluation</li>
+                            <li>Prediction</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- WHO CAN JOIN -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Eligibility</span>
+
+                <h2>
+                    Who Can Join This Course?
+                </h2>
+
+                <p>
+                    The course is designed for learners from different
+                    educational and professional backgrounds.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="who-box text-center">
+
+                        <i class="bi bi-mortarboard"></i>
+
+                        <h4>College Students</h4>
+
+                        <p>
+                            Build practical skills alongside your
+                            academic education.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="who-box text-center">
+
+                        <i class="bi bi-person-workspace"></i>
+
+                        <h4>Working Professionals</h4>
+
+                        <p>
+                            Upgrade your skills or prepare for a
+                            career transition.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="who-box text-center">
+
+                        <i class="bi bi-laptop"></i>
+
+                        <h4>Freshers</h4>
+
+                        <p>
+                            Build a portfolio and develop job-ready
+                            technical skills.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="who-box text-center">
+
+                        <i class="bi bi-arrow-repeat"></i>
+
+                        <h4>Career Switchers</h4>
+
+                        <p>
+                            Move towards data-driven technology
+                            careers with structured training.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CAREER -->
+
+    <section class="section curriculum-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Career Opportunities</span>
+
+                <h2>
+                    Career Paths After Data Science
+                </h2>
+
+                <p>
+                    Develop skills that can help you pursue multiple
+                    data-focused technology roles.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <div class="col-6 col-md-4 col-lg-3">
+
+                    <div class="career-card">
+                        <i class="bi bi-bar-chart"></i>
+                        <h5>Data Analyst</h5>
+                    </div>
+
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+
+                    <div class="career-card">
+                        <i class="bi bi-cpu"></i>
+                        <h5>Data Scientist</h5>
+                    </div>
+
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+
+                    <div class="career-card">
+                        <i class="bi bi-robot"></i>
+                        <h5>ML Engineer</h5>
+                    </div>
+
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+
+                    <div class="career-card">
+                        <i class="bi bi-database"></i>
+                        <h5>Data Engineer</h5>
+                    </div>
+
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+
+                    <div class="career-card">
+                        <i class="bi bi-graph-up"></i>
+                        <h5>Business Analyst</h5>
+                    </div>
+
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+
+                    <div class="career-card">
+                        <i class="bi bi-pie-chart"></i>
+                        <h5>BI Analyst</h5>
+                    </div>
+
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+
+                    <div class="career-card">
+                        <i class="bi bi-search"></i>
+                        <h5>Research Analyst</h5>
+                    </div>
+
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+
+                    <div class="career-card">
+                        <i class="bi bi-graph-up-arrow"></i>
+                        <h5>Data Consultant</h5>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PLACEMENT -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+
+                    <span class="text-uppercase fw-bold" style="color:#ff5a1f;">
+                        Career Support
+                    </span>
+
+                    <h2 class="fw-bold mt-2 mb-3">
+                        More Than Just Data Science Training
+                    </h2>
+
+                    <p>
+                        At CNC WEB WORLD, the learning journey can extend
+                        beyond classroom training. Students receive career
+                        guidance, project support, resume preparation and
+                        interview preparation.
+                    </p>
+
+                    <div class="mt-4">
+
+                        <p>
+                            <i class="bi bi-check-circle-fill text-danger"></i>
+                            Resume Building
+                        </p>
+
+                        <p>
+                            <i class="bi bi-check-circle-fill text-danger"></i>
+                            Technical Interview Preparation
+                        </p>
+
+                        <p>
+                            <i class="bi bi-check-circle-fill text-danger"></i>
+                            Mock Interviews
+                        </p>
+
+                        <p>
+                            <i class="bi bi-check-circle-fill text-danger"></i>
+                            HR Interview Preparation
+                        </p>
+
+                        <p>
+                            <i class="bi bi-check-circle-fill text-danger"></i>
+                            Project Guidance
+                        </p>
+
+                        <p>
+                            <i class="bi bi-check-circle-fill text-danger"></i>
+                            Placement Assistance
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-6 mt-4 mt-lg-0">
+
+                    <div class="feature-card">
+
+                        <h3 class="fw-bold">
+                            Course Highlights
+                        </h3>
+
+                        <hr>
+
+                        <div class="row">
+
+                            <div class="col-6 mb-3">
+                                <strong>Mode</strong>
+                                <br>
+                                <span class="text-secondary">
+                                    Offline Classroom
+                                </span>
+                            </div>
+
+                            <div class="col-6 mb-3">
+                                <strong>Level</strong>
+                                <br>
+                                <span class="text-secondary">
+                                    Beginner to Advanced
+                                </span>
+                            </div>
+
+                            <div class="col-6 mb-3">
+                                <strong>Language</strong>
+                                <br>
+                                <span class="text-secondary">
+                                    Hindi / English
+                                </span>
+                            </div>
+
+                            <div class="col-6 mb-3">
+                                <strong>Projects</strong>
+                                <br>
+                                <span class="text-secondary">
+                                    Real-World Projects
+                                </span>
+                            </div>
+
+                            <div class="col-6">
+                                <strong>Certification</strong>
+                                <br>
+                                <span class="text-secondary">
+                                    Yes
+                                </span>
+                            </div>
+
+                            <div class="col-6">
+                                <strong>Support</strong>
+                                <br>
+                                <span class="text-secondary">
+                                    Career Assistance
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+
+    <section class="cta">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-8">
+
+                    <h2>
+                        Ready to Start Your Data Science Career?
+                    </h2>
+
+                    <p class="mb-0">
+                        Join practical offline Data Science training
+                        at CNC WEB WORLD and start building your
+                        skills through projects.
+                    </p>
+
+                </div>
+
+                <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+
+                    <a href="#enquiry" class="btn-light-custom">
+
+                        Book Free Demo
+                        <i class="bi bi-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FAQ -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>FAQs</span>
+
+                <h2>
+                    Frequently Asked Questions
+                </h2>
+
+            </div>
+
+
+            <div class="accordion" id="faq">
+
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">
+
+                            What is Data Science?
+
+                        </button>
+
+                    </h2>
+
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faq">
+
+                        <div class="accordion-body">
+
+                            Data Science is a multidisciplinary field that
+                            uses programming, statistics, data analysis and
+                            machine learning to extract insights and build
+                            data-driven solutions.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
+
+                            Is this course suitable for beginners?
+
+                        </button>
+
+                    </h2>
+
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faq">
+
+                        <div class="accordion-body">
+
+                            Yes. The curriculum begins with Python and
+                            programming fundamentals before progressing
+                            to data analysis and machine learning.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">
+
+                            Do you provide offline classroom training?
+
+                        </button>
+
+                    </h2>
+
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faq">
+
+                        <div class="accordion-body">
+
+                            Yes. CNC WEB WORLD provides offline classroom
+                            training at its Navi Mumbai location with
+                            trainer interaction and practical sessions.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq4">
+
+                            Will I work on projects?
+
+                        </button>
+
+                    </h2>
+
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faq">
+
+                        <div class="accordion-body">
+
+                            Yes. The training includes assignments,
+                            datasets, case studies and capstone-style
+                            projects to provide practical experience.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq5">
+
+                            Is placement assistance available?
+
+                        </button>
+
+                    </h2>
+
+                    <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faq">
+
+                        <div class="accordion-body">
+
+                            CNC WEB WORLD provides career support including
+                            resume preparation, interview preparation,
+                            mock interviews and placement assistance.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq6">
+
+                            What technologies will I learn?
+
+                        </button>
+
+                    </h2>
+
+                    <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faq">
+
+                        <div class="accordion-body">
+
+                            The curriculum includes Python, NumPy, Pandas,
+                            Matplotlib, Seaborn, SQL, Jupyter Notebook and
+                            Scikit-learn along with statistics and machine
+                            learning concepts.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <div class="col-lg-4">
+
+                    <h4>CNC WEB WORLD</h4>
+
+                    <p>
+                        CNC WEB WORLD provides practical IT training
+                        programs designed to help students and
+                        professionals develop industry-relevant skills.
+                    </p>
+
+                </div>
+
+
+                <div class="col-lg-4">
+
+                    <h4>Our Location</h4>
+
+                    <p>
+                        Second Floor, Nerul Railway Station Complex,
+                        Office No. F-201 & 203, above Union Bank,
+                        Nerul West, Navi Mumbai, Maharashtra 400706
+                    </p>
+
+                    <p>
+                        <i class="bi bi-telephone"></i>
+                        7400193799
+                    </p>
+
+                </div>
+
+
+                <div class="col-lg-4">
+
+                    <h4>Quick Links</h4>
+
+                    <ul>
+
+                        <li>
+                            <a href="https://cncwebworld.com/">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#curriculum">
+                                Courses
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#about">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://cncwebworld.com/mumbai/contact.php">
+                                Contact Us
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="copyright">
+
+                © 2026 CNC WEB WORLD. All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script>
+        (function () {
+            'use strict';
+
+            // Data Science curriculum dropdowns
+            var modules = document.querySelectorAll('.module');
+
+            modules.forEach(function (module) {
+                var header = module.querySelector('.module-header');
+                if (!header) return;
+
+                function toggleModule() {
+                    var isOpen = module.classList.contains('is-open');
+
+                    // Close other modules so the curriculum stays clean.
+                    modules.forEach(function (item) {
+                        item.classList.remove('is-open');
+                        var itemHeader = item.querySelector('.module-header');
+                        if (itemHeader) itemHeader.setAttribute('aria-expanded', 'false');
+                    });
+
+                    // Toggle the selected module.
+                    if (!isOpen) {
+                        module.classList.add('is-open');
+                        header.setAttribute('aria-expanded', 'true');
+                    }
+                }
+
+                header.addEventListener('click', toggleModule);
+
+                header.addEventListener('keydown', function (event) {
+                    if (event.key === 'Enter' || event.key === ' ') {
+                        event.preventDefault();
+                        toggleModule();
+                    }
+                });
+            });
+        })();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
